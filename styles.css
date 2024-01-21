@@ -1,0 +1,21 @@
+.homecard {
+    background-color: #D5CCFF !important;
+}
+
+.text-1 {
+    color: blueviolet !important;
+}
+
+.taskbutton {
+    background-color: blueviolet !important;
+    color: #ffffff !important; /* Set text color to white */
+    border: none !important; /* Remove button border */
+}
+
+.taskbutton:hover {
+    background-color: darkviolet !important; /* Change color on hover */
+}
+.homeicon {
+    width: 100%; 
+    height: 50px;
+}
