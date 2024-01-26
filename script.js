@@ -13,7 +13,9 @@ function addTask() {
     }
 
     const li = document.createElement('li');
-    li.innerHTML = `<span>${taskText}</span>`;
+    li.innerHTML = `<span>${taskText}</span>
+    <i class="bi bi-trash3 delete-icon" onclick="deleteTask(this)"></i>
+    `;
 
     li.classList.add('task-item');
     taskList.appendChild(li);
@@ -22,4 +24,9 @@ function addTask() {
     mainCard.style.display = 'none';
 
     taskInput.value = '';
+}
+
+function deleteTask(icon) {
+    const taskItem = icon.parentElement;
+    taskList.removeChild(taskItem);
 }
