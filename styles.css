@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 body{
     background: linear-gradient(rgba(255, 251, 251, 0.582), rgba(255, 255, 255, 0.56)), url(./assets/background2.svg);
     background-repeat: cover;
@@ -34,14 +36,14 @@ ul {
     padding: 0;
 }
 .task-item {
-    width: 100%;
+    width: 50%;
     height: 100%;
-    padding: 24px;
-    background: #D5CCFF;
-    border-radius: 16px;
+    padding: 10px;
+    background: #f6f6f9;
+    border-radius: 10px;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    gap: 24px;
+   
     display: inline-flex;
+
 }
