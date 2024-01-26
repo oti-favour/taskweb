@@ -9,17 +9,18 @@
 </head>
 <body>
     <div class="container mt-5 ">
-        <div class="card text-center homecard">
-            <div class="card-body">
-                <img src="./assets/homeicon.svg" alt=" icon" class="homeicon">
-                <h1 class="card-title">Hello! <br/> What would you like to <span class="text-1">DO</span> today?</h1>
+        <div class="card text-center homecard" >
+            <div class="card-body" >
+                <div class="text-wrapper" id="mainCard">
+                    <img src="./assets/homeicon.svg" alt=" icon" class="homeicon" id="homeIcon">
+                    <h1 class="card-title" id="cardTitle">Hello! <br/> What would you like to <span class="text-1">DO</span> today?</h1>
+                 </div>
                 <div class="input-section py-2">
                     <input type="text" id="taskInput" class="px-4" placeholder="Add a new task">
-                    <button type="button" class="btn taskbutton">Add Task</button>
+                    <button type="button" class="btn taskbutton" onclick="addTask()">Add Task</button>
                 </div>
-                <ul id="taskList"></ul>
-                
             </div>
+            <ul id="taskList"></ul>
         </div>
     </div>
     
