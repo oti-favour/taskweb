@@ -10,6 +10,7 @@ body{
 .homecard {
     background-color: #D5CCFF !important;
     border-radius: 70px;
+    box-shadow: 0 5px 7px rgb(0, 0, 0.1);
 }
 
 .text-1 {
@@ -37,25 +38,39 @@ input[type="text"] {
 ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .task-item {
     width: 50%;
     height: 100%;
     padding: 10px;
+    margin: 1%;
     background: #f6f6f9;
     border-radius: 10px;
-    flex-direction: column;
-    justify-content: center;
-   
-    display: inline-flex;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
 }
 .delete-icon {
     cursor: pointer;
-   
-    margin-left: 8px; /* Add margin to separate the text and icon */
+   color: black;
+    
 }
 
 .delete-icon:hover{
      color: red;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Add styles for checkbox if needed */
+.task-item input[type="checkbox"] {
+    margin-right: 8px;
 }
