@@ -15,8 +15,8 @@ function addTask() {
     const li = document.createElement('li');
     
     li.innerHTML = `
-    <input type="checkbox" class="mr-5" onchange="completeTask(this)">
-    <span>${taskText}</span>
+    <input type="checkbox" class="me-5" onchange="completeTask(this)">
+    <span class="me-3">${taskText}</span>
     <i class="bi bi-trash3 delete-icon ml-5" onclick="deleteTask(this)"></i>
     `;
 
@@ -24,7 +24,7 @@ function addTask() {
     taskList.appendChild(li);
 
   
-    document.getElementById('mainCard').style.display = 'none';
+    mainCard.style.display = 'none';
     document.getElementById('todoListContainer').style.display = 'block';
 
     taskInput.value = '';
@@ -40,7 +40,7 @@ function deleteTask(icon) {
     taskList.removeChild(taskItem);
 
     if (taskList.children.length === 0) {
-        document.getElementById('mainCard').style.display = 'block';
+        mainCard.style.display = 'block';
         document.getElementById('todoListContainer').style.display = 'none';
     }
 }

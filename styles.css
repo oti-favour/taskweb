@@ -74,3 +74,6 @@ ul {
 .task-item input[type="checkbox"] {
     margin-right: 8px;
 }
+#todoListContainer {
+    display: none; /* Hide initially */
+}
